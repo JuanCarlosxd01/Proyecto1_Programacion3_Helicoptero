@@ -1,7 +1,15 @@
 TEMPLATE = app
 CONFIG += console c++17
 CONFIG -= app_bundle
-CONFIG -= qt
+QT += core gui widgets
+
+INCLUDEPATH += \
+        ArchivosYPantallas \
+        ElementosJuego \
+        EstructurasDeDatos \
+        HiloYLogica \
+        JugadorYMundo \
+
 
 SOURCES += \
         ArchivosYPantallas/gestorarchivos.cpp \
@@ -26,6 +34,7 @@ SOURCES += \
         JugadorYMundo/obstaculo.cpp \
         JugadorYMundo/terreno.cpp \
         JugadorYMundo/ventanajuego.cpp \
+        JugadorYMundo/vistajuego.cpp \
         main.cpp
 
 HEADERS += \
@@ -50,4 +59,5 @@ HEADERS += \
     JugadorYMundo/helicoptero.h \
     JugadorYMundo/obstaculo.h \
     JugadorYMundo/terreno.h \
-    JugadorYMundo/ventanajuego.h
+    JugadorYMundo/ventanajuego.h \
+    JugadorYMundo/vistajuego.h

@@ -1,10 +1,17 @@
 #ifndef PANTALLAINSTRUCCIONES_H
 #define PANTALLAINSTRUCCIONES_H
 
-class PantallaInstrucciones
+#include <QWidget>
+
+class PantallaInstrucciones : public QWidget
 {
+    Q_OBJECT
+
 public:
-    PantallaInstrucciones();
+    explicit PantallaInstrucciones(QWidget *parent = nullptr);
+
+signals:
+    void volver();
 };
 
 #endif // PANTALLAINSTRUCCIONES_H
