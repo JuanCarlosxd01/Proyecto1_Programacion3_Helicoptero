@@ -7,4 +7,4 @@ public:
     GestorArchivos();
 };
 
-#endif // GESTORARCHIVOS_H
+#endif

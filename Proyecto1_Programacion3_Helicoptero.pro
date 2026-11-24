@@ -12,13 +12,17 @@ INCLUDEPATH += \
 
 
 SOURCES += \
+        ArchivosYPantallas/fondonocturno.cpp \
+        ArchivosYPantallas/fuentes.cpp \
         ArchivosYPantallas/gestorarchivos.cpp \
         ArchivosYPantallas/jugador.cpp \
         ArchivosYPantallas/menuprincipal.cpp \
+        ArchivosYPantallas/opcionmenu.cpp \
         ArchivosYPantallas/pantallainstrucciones.cpp \
         ArchivosYPantallas/pantallarecords.cpp \
         ArchivosYPantallas/pantallaresultado.cpp \
         ArchivosYPantallas/seleccionmision.cpp \
+        ArchivosYPantallas/tecla.cpp \
         ArchivosYPantallas/ventanaprincipal.cpp \
         ElementosJuego/civil.cpp \
         ElementosJuego/enemigo.cpp \
@@ -38,13 +42,18 @@ SOURCES += \
         main.cpp
 
 HEADERS += \
+    ArchivosYPantallas/fondonocturno.h \
+    ArchivosYPantallas/fuentes.h \
     ArchivosYPantallas/gestorarchivos.h \
     ArchivosYPantallas/jugador.h \
     ArchivosYPantallas/menuprincipal.h \
+    ArchivosYPantallas/opcionmenu.h \
+    ArchivosYPantallas/paleta.h \
     ArchivosYPantallas/pantallainstrucciones.h \
     ArchivosYPantallas/pantallarecords.h \
     ArchivosYPantallas/pantallaresultado.h \
     ArchivosYPantallas/seleccionmision.h \
+    ArchivosYPantallas/tecla.h \
     ArchivosYPantallas/ventanaprincipal.h \
     ElementosJuego/civil.h \
     ElementosJuego/enemigo.h \
@@ -61,3 +70,5 @@ HEADERS += \
     JugadorYMundo/terreno.h \
     JugadorYMundo/ventanajuego.h \
     JugadorYMundo/vistajuego.h
+
+RESOURCES += recursos.qrc

@@ -1,14 +1,14 @@
-#include "VentanaPrincipal.h"
-#include "MenuPrincipal.h"
-#include "PantallaInstrucciones.h"
-#include "VentanaJuego.h"
+#include "ventanaprincipal.h"
+#include "menuprincipal.h"
+#include "pantallainstrucciones.h"
+#include "ventanajuego.h"
 #include <QStackedWidget>
 #include <QVBoxLayout>
 
 VentanaPrincipal::VentanaPrincipal(QWidget *parent)
     : QWidget(parent)
 {
-    setWindowTitle("Ejemplo Qt - Pantallas, escena y teclado");
+    setWindowTitle("Helicopter Rescue");
     resize(900, 560);
 
     menu = new MenuPrincipal(this);
@@ -41,4 +41,4 @@ VentanaPrincipal::VentanaPrincipal(QWidget *parent)
         juego->detener();
         pila->setCurrentWidget(menu);
     });
-}
+}

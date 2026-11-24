@@ -1,11 +1,11 @@
 #include <QApplication>
-#include "VentanaPrincipal.h"
-
-using namespace std;
+#include "ventanaprincipal.h"
+#include "fuentes.h"
 
 int main(int argc, char *argv[])
 {
     QApplication app(argc, argv);
+    Fuentes::cargar();
 
     VentanaPrincipal ventana;
     ventana.show();

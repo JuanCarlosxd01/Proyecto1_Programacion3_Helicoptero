@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/">
+        <file>recursos/fuentes/vanguardcf-bold.otf</file>
+        <file>recursos/fuentes/vanguardcf-heavy.otf</file>
+        <file>recursos/fuentes/clashdisplay-medium.otf</file>
+        <file>recursos/fuentes/clashdisplay-semibold.otf</file>
+    </qresource>
+</RCC>

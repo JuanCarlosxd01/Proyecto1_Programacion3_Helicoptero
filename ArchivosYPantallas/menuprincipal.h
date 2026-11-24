@@ -1,9 +1,11 @@
 #ifndef MENUPRINCIPAL_H
 #define MENUPRINCIPAL_H
 
-#include <QWidget>
+#include "fondonocturno.h"
 
-class MenuPrincipal : public QWidget
+class OpcionMenu;
+
+class MenuPrincipal : public FondoNocturno
 {
     Q_OBJECT
 
@@ -14,6 +16,12 @@ signals:
     void jugar();
     void instrucciones();
     void salir();
+
+protected:
+    void showEvent(QShowEvent *event) override;
+
+private:
+    OpcionMenu *btnJugar;
 };
 
-#endif // MENUPRINCIPAL_H
+#endif

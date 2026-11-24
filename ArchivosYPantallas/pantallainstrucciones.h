@@ -1,9 +1,11 @@
 #ifndef PANTALLAINSTRUCCIONES_H
 #define PANTALLAINSTRUCCIONES_H
 
-#include <QWidget>
+#include "fondonocturno.h"
 
-class PantallaInstrucciones : public QWidget
+class OpcionMenu;
+
+class PantallaInstrucciones : public FondoNocturno
 {
     Q_OBJECT
 
@@ -12,6 +14,13 @@ public:
 
 signals:
     void volver();
+
+protected:
+    void showEvent(QShowEvent *event) override;
+    void keyPressEvent(QKeyEvent *event) override;
+
+private:
+    OpcionMenu *btnVolver;
 };
 
-#endif // PANTALLAINSTRUCCIONES_H
+#endif
